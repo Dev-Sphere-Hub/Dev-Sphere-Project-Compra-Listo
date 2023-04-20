@@ -39,7 +39,7 @@ function ExpressTab() {
     },
     {
       id: 2,
-      name: "compras",
+      name: "Compras",
       data: [
         { id: 1, name: "Leche", checked: false, editing: false, quantity: 2 },
         { id: 2, name: "Pan", checked: false, editing: false, quantity: 2 },

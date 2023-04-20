@@ -17,7 +17,7 @@ const Home = () => {
   const parsedData = JSON.parse(storedNameList);
   console.log(parsedData);
   return (
-    <div className="z-0 mx-auto p-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:bg-contain bg-[url('../../assets/images/PaperBG.jpg')] ">
+    <div className="z-0 mx-auto p-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 h-screen lg:bg-contain bg-[url('../../assets/images/PaperBG.jpg')] ">
   
       <div className="col-span-full flex justify-between items-center h-full mb-6">
         <div className="flex items-center text-end h-28 w-full bg-contain bg-no-repeat bg-[url('../../assets/images/Cloud.webp')]">
@@ -50,7 +50,7 @@ const Home = () => {
         items={list.data}
       />
     ))}
-      <Link to="/list" className="self-center">
+      <Link to="/list" className="self-start">
         <div className="hidden lg:block m-auto">
           <div className="max-w-[22rem] h-[12rem] bg-violet-300 rounded-lg flex justify-center items-center cursor-pointer hover:bg-gray-300">
             <svg
