@@ -15,7 +15,7 @@ function NavBar() {
       <div className="max-w-7xl mx-auto px-4 pt-2 lg:px-8">
         <div className="relative flex items-center justify-center h-16">
           <div className="flex ml-[45%] lg:mx-7">
-          <Link to="/">
+          <Link to="/" className="flex">
             <img className="h-11 w-auto " src={smallLogo} alt="Logo" />
             <span className="hidden lg:block text-lg text-black font-damion ml-3 mr-2 pr-3">
               Compra LISTo

@@ -2,7 +2,7 @@ const ListCard = ({ title, items }) => {
   return (
     <div className="flex flex-col max-w-[22rem] gap-2 h-auto">
       <div
-        className={`flex flex-col justify-center p-[2%] h-full bg-gray-50 drop-shadow-md rounded-2xl text-center text-neutral-900`}
+        className={`flex flex-col justify-center p-[2%] bg-gray-50 drop-shadow-md rounded-2xl text-center text-neutral-900`}
       >
         <div className="flex-1 self-center w-auto h-auto px-1 mt-[4%] max-w-sm">
           <b>
