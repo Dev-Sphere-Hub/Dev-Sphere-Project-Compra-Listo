@@ -6,7 +6,7 @@ const ListCard = ({ title, items }) => {
   >
     <div className="flex-1 self-center w-auto h-auto px-1 mt-[4%] max-w-sm">
       <b>
-        <h2 className="text-title font-title max-[270px]:text-base ">
+        <h2 className="text-title font-damion text-lg font-title max-[270px]:text-base ">
           {title}
         </h2>
       </b>
