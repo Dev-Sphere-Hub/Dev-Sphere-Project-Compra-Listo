@@ -6,8 +6,6 @@ import Logo from "../../assets/images/Logo.webp";
 import Compra from "@/assets/images/Compra.webp";
 import OrangeButton from "@/components/OrangeButton";
 import Listo from "@/assets/images/Listo.webp";
-import compraListo from "@/assets/images/compraListo.webp";
-import angledUnderline from "@/assets/images/angledUnderline.png";
 
 const LandingPage = ({ setIsAuthenticated, isAuthenticated }) => {
   const navigate = useNavigate();
