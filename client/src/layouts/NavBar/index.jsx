@@ -1,15 +1,7 @@
 import smallLogo from "@/assets/images/smallLogo.webp";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import {
-  IoIosList,
-  IoIosPaper,
-  BsFillQuestionCircleFill,
-  TiInfoLargeOutline,
-  FaRegEnvelope,
-  FaRegEnvelopeOpen,
-  MdCategory,
-} from "react-icons/all";
+import { IoIosList, IoIosPaper, BsFillQuestionCircleFill, TiInfoLargeOutline, FaRegEnvelope, FaRegEnvelopeOpen, MdCategory, IoMdLogOut } from "react-icons/all";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,10 +15,12 @@ function NavBar() {
       <div className="max-w-7xl mx-auto px-4 pt-2 lg:px-8">
         <div className="relative flex items-center justify-center h-16">
           <div className="flex ml-[45%] lg:mx-7">
+          <Link to="/">
             <img className="h-11 w-auto " src={smallLogo} alt="Logo" />
             <span className="hidden lg:block text-lg text-black font-damion ml-3 mr-2 pr-3">
               Compra LISTo
             </span>
+            </Link>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center md:hidden pt-2">
             <button
@@ -66,6 +60,24 @@ function NavBar() {
                       </span>
                     </li>
                   </Link>
+                  <div className="absolute inset-y-0 right-0 flex items-center md:hidden pt-2">
+  <button
+    className={`flex flex-col w-6 h-7 border-0 bg-transparent gap-1.5 btn-animation ${
+      isOpen ? "open" : ""
+    }`}
+    onClick={() => setIsOpen(!isOpen)}
+  >
+    <span className="w-full bg-black h-[2px] rounded-md transition-all duration-500 origin-left btn-line"></span>
+    <span className="w-full bg-black h-[2px] rounded-md transition-all duration-500 origin-left btn-line"></span>
+    <span className="w-full bg-black h-[2px] rounded-md transition-all duration-500 origin-left btn-line"></span>
+  </button>
+  <Link to="/">
+    <button className="flex items-center ml-4 text-gray-500 hover:text-gray-900">
+      <IoMdLogOut className="text-xl" />
+    </button>
+  </Link>
+</div>
+
                 </ul>
               </div>
             </div>
@@ -81,7 +93,7 @@ function NavBar() {
             <ul className="w-full">
               <Link to="/home">
                 <li className="flex items-center mr-3 p-3 rounded-full text-slate-900 hover:bg-slate-200 text-body font-body">
-                  <MdCategory className="mr-3.5 text-violet-700" />
+                  <IoIosList className="mr-3.5 text-violet-700" />
                   Mis listas
                 </li>
               </Link>
