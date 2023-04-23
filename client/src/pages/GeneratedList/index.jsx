@@ -130,7 +130,7 @@ function GeneratedList() {
 
   return (
     <main className="z-0 lg:bg-contain bg-[url('../../assets/images/mainBg.webp')] min-h-screen">
-      <div className="lg:px-11 bg-white bg-opacity-80 h-full min-h-screen relative pb-24">
+      <div className="lg:px-11 bg-white bg-opacity-80  h-full min-h-screen relative pb-24">
         <div className=" max-w-2xl mx-auto bg-white shadow-2xl p-[4%] w-11/12 my-10 mb-30">
           {/* <PDFViewer className="w-full h-screen">
         <ListDocument listName="Lista de Marzo" products={PRODUCTS} />
@@ -263,7 +263,7 @@ function ProductItem({
             <div className="fixed inset-0 bg-black bg-opacity-25" />
           </Transition.Child>
 
-          <div className="fixed inset-0 overflow-y-auto">
+          <div className="fixed inset-0 overflow-y-auto scrollbar">
             <div className="flex min-h-full items-center justify-center p-4 text-center">
               <Transition.Child
                 as={Fragment}

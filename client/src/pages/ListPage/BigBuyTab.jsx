@@ -130,7 +130,7 @@ const BigBuyTab = () => {
     console.log(productsList);
     localStorage.setItem("compraLista", JSON.stringify(productsList));
     // aquí se puede enviar la lista a un servidor o mostrarla en una ventana emergente.
-    navigate("/list/2");
+    navigate("/create/2");
   };
   return (
     <main className="">
@@ -160,7 +160,7 @@ const BigBuyTab = () => {
                 <MdAdd />
               </button>
             </div>
-            <ul className="h-55 overflow-y-scroll mt-4">
+            <ul className="h-55 overflow-y-scroll scrollbar mt-4">
               {PRODUCTS.filter(
                 (product) => product.category == selectedCategory
               )?.map((product) => (

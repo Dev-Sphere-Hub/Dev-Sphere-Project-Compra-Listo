@@ -73,7 +73,7 @@ const AppRoutes = ({ setIsAuthenticated, isAuthenticated }) => {
               }
             />
             <Route
-              path="/list"
+              path="/create"
               element={
                 <>
                   <NavBar />
@@ -83,8 +83,8 @@ const AppRoutes = ({ setIsAuthenticated, isAuthenticated }) => {
               }
             />
             <Route
-              path="/list/:id"
-              element={
+              path="/create/:id"
+              element={ 
                 <>
                   <NavBar />
                   <GoBack />

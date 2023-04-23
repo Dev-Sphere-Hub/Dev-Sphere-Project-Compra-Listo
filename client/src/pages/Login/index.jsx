@@ -22,7 +22,7 @@ const Login = ({ setIsAuthenticated, isAuthenticated }) => {
     setErrorMessage("");
     try {
       await signInUser(data);
-      navigate("/home");
+      navigate("/create");
     } catch (error) {
       console.error(error);
       setErrorMessage("Hubo un error al iniciar sesión");

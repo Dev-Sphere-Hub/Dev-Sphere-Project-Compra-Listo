@@ -23,7 +23,7 @@ const Home = () => {
         <div className="flex items-center text-end h-28 w-full bg-contain bg-no-repeat bg-[url('../../assets/images/Cloud.webp')]">
           <h1 className="text-center text-2xl font-bold">Listas recientes</h1>
         </div>
-        <Link to="/list">
+        <Link to="/create">
           <div className="w-16 h-16 lg:hidden bg-violet-300 rounded-full flex justify-center items-center cursor-pointer hover:bg-gray-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -50,9 +50,9 @@ const Home = () => {
         items={list.data}
       />
     ))}
-      <Link to="/list" className="self-start">
+      <Link to="/create" className="self-start">
         <div className="hidden lg:block m-auto">
-          <div className="max-w-[22rem] h-[12rem] bg-violet-300 rounded-lg flex justify-center items-center cursor-pointer hover:bg-gray-300">
+          <div className="max-w-[22rem] h-[13.5rem] bg-violet-300 rounded-lg flex justify-center items-center cursor-pointer hover:bg-gray-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
