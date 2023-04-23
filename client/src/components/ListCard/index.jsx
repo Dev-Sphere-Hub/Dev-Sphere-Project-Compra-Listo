@@ -11,14 +11,14 @@ const ListCard = ({ title, items }) => {
         </h2>
       </b>
       <div className="w-full p-1">
-        <div className="flex justify-between p-1">
+        <div className="flex justify-between p-1 gap-2 lg:gap-0">
           <h3 className="font-bold">Producto</h3>
           <h3 className="font-bold">Cantidad</h3>
         </div>
         {items === null
           ? "No existen datos en la lista"
           : items.map((item) => (
-              <ul className="border border-b-2 border-gray-400 rounded-md overflow-x-hidden overflow-y-auto flex m-1 p-1 gap-1">
+              <ul className="border border-b-2 border-gray-400 rounded-md overflow-x-hidden overflow-y-auto flex m-1 gap-1">
                 <div className="flex w-full">
                   <div className="w-full md:w-72 flex gap-1 justify-start items-center border-r-2 border-black">
                     <div>{item.name}</div>

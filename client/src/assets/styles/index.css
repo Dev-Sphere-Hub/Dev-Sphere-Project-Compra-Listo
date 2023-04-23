@@ -24,6 +24,24 @@ html {
   @apply bg-cover h-screen;
   background-image: var(--bg-main-image);
 }
+.bg-black-80 {
+  --tw-bg-opacity: 0.8;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+/* scrollbar*/
+.scrollbar::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #f5f5f5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #dcdcdc;
+  border-radius: 0.25rem;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #a8a8a8;
+}
 
 /* Animaciones */
 
@@ -66,5 +84,13 @@ html {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-delay: 0s;
+}
+
+/*Animate BiPlusCircle*/
+.rotate {
+  transition: transform 0.3s ease-in-out;
+}
+.rotate:active {
+  transform: rotate(360deg);
 }
 

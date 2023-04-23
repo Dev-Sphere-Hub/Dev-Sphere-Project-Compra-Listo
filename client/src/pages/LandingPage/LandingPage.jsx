@@ -5,7 +5,7 @@ import mainBg from "../../assets/images/mainBg.webp";
 import Logo from "../../assets/images/Logo.webp";
 import Compra from "@/assets/images/Compra.webp";
 import OrangeButton from "@/components/OrangeButton";
-import Listo from "@/assets/images/Listo.webp";
+import Listo from "@/assets/images/createo.webp";
 
 const LandingPage = ({ setIsAuthenticated, isAuthenticated }) => {
   const navigate = useNavigate();
