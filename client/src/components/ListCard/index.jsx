@@ -4,7 +4,7 @@ const ListCard = ({ title, items }) => {
   <div
     className={`flex flex-col justify-center p-[2%] bg-gray-50 drop-shadow-md rounded-2xl text-center text-neutral-900`}
   >
-    <div className="flex-1 self-center w-auto h-auto px-1 mt-[4%] max-w-sm">
+    <div className="flex-1 self-center w-full h-auto px-1 mt-[4%] max-w-sm">
       <b>
         <h2 className="text-title font-damion text-lg font-title max-[270px]:text-base ">
           {title}
@@ -18,13 +18,13 @@ const ListCard = ({ title, items }) => {
         {items === null
           ? "No existen datos en la lista"
           : items.map((item) => (
-              <ul className="border border-b-2 border-gray-400 rounded-md overflow-x-hidden overflow-y-auto flex m-1 gap-1">
+              <ul className="w-full border border-b-2 border-gray-400 rounded-md overflow-x-hidden overflow-y-auto flex m-1 gap-1">
                 <div className="flex w-full">
-                  <div className="w-full md:w-72 flex gap-1 justify-start items-center border-r-2 border-black">
+                  <div className="w-full md:w-72 flex gap-1 justify-start items-center border-r-2 border-black ml-[2%]">
                     <div>{item.name}</div>
                   </div>
-                  <div className="w-full md:flex-1 flex justify-end items-center gap-2 bg-[#ecf6fd]">
-                    <div>{item.quantity}x</div>
+                  <div className="w-full md:flex-1 flex justify-end items-center gap-2 bg-[#ecf6fd] mr-[2%]">
+                    <div>x{item.quantity}</div>
                   </div>
                 </div>
               </ul>
