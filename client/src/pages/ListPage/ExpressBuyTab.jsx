@@ -183,13 +183,13 @@ function ExpressBuyTab() {
             <div className="flex justify-start items-center ">
               <BiPlusCircle
                 onClick={() => addSelectItem(product.id)}
-                className={`text-2xl lg:text-3xl text-primary cursor-pointer rotate`}
+                className={`text-3xl text-primary cursor-pointer rotate`}
               />
               {product.editing ? (
                 <input
                   autoFocus="autofocus"
                   type="text"
-                  className="w-[14rem] lg:w-full ml-2 lg:text-2xl animate-blink bg-transparent rounded-md focus:outline-none focus:ring focus:ring-transparent"
+                  className="max-w-[600px]:w-[14rem] w-[10rem]  lg:w-full ml-2 lg:text-2xl animate-blink bg-transparent rounded-md focus:outline-none focus:ring focus:ring-transparent"
                   value={product.name}
                   onChange={(e) =>
                     handleEditProduct(

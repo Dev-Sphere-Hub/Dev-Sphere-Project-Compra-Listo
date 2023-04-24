@@ -20,10 +20,10 @@ const ListCard = ({ title, items }) => {
           : items.map((item) => (
               <ul className="w-full border border-b-2 border-gray-400 rounded-md overflow-x-hidden overflow-y-auto flex m-1 gap-1">
                 <div className="flex w-full">
-                  <div className="w-full md:w-72 flex gap-1 justify-start items-center border-r-2 border-black ml-[2%]">
+                  <div className="w-full md:w-72 flex gap-1 justify-start items-center border-r-2 border-black pl-[2%]">
                     <div>{item.name}</div>
                   </div>
-                  <div className="w-full md:flex-1 flex justify-end items-center gap-2 bg-[#ecf6fd] mr-[2%]">
+                  <div className="w-full flex justify-end items-center gap-2 bg-[#ecf6fd] px-[2%]">
                     <div>x{item.quantity}</div>
                   </div>
                 </div>
