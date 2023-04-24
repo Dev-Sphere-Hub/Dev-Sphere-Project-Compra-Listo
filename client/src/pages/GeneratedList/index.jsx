@@ -208,12 +208,12 @@ function GeneratedList() {
         <footer className="bg-secondary-500/30 backdrop-blur-md fixed bottom-0 left-0 w-full py-3">
           <div className="container flex justify-between items-center">
             <span>
-              Productos tachados de la lista:
-              <b>{productsList.filter((product) => product.done).length}</b>
+              Productos tachados:
+              <b className="lg:ml-2">{productsList.filter((product) => product.done).length}</b>
             </span>
-            <span>
+            <span className="flex justify-end items-end ">
               Llevas hasta ahora:
-              <b>
+              <b className="lg:ml-2">
                 $
                 {Math.round(
                   productsList.reduce(function (acc, obj) {
@@ -234,6 +234,7 @@ function ProductItem({
   toggleProductDone,
   changeProductPrice,
   changeProductCuantity,
+  saveChanges, // Add saveChanges prop
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -283,6 +284,7 @@ function ProductItem({
                     product={product}
                     changeProductPrice={changeProductPrice}
                     changeProductCuantity={changeProductCuantity}
+                    saveChanges={saveChanges} // Pass saveChanges prop
                   />
                 </Dialog.Panel>
               </Transition.Child>
@@ -319,12 +321,25 @@ function ProductItem({
   );
 }
 
+
+
+
 function EditProductModal({
   handleCloseModal,
   product,
   changeProductPrice,
   changeProductCuantity,
+  saveChanges,
 }) {
+  const [newPrice, setNewPrice] = useState(product?.price);
+  const [newQuantity, setNewQuantity] = useState(product?.cuantity);
+
+  const handleSaveChanges = () => {
+    const updatedProduct = { ...product, price: newPrice, cuantity: newQuantity };
+    saveChanges(updatedProduct);
+    handleCloseModal(); // cerrar el modal después de guardar los cambios
+  };
+
   return (
     <div className="flex flex-col gap-1">
       <div className="flex justify-between">
@@ -343,18 +358,25 @@ function EditProductModal({
         autofocus="autofocus"
         defaultValue={product.price}
         type="number"
-        onChange={(e) => changeProductPrice(product, e.target.value)}
+        onChange={(e) => setNewPrice(e.target.value)}
         className="border-secondary-400 border-2 focus:outline-secondary-600"
       />
       <label className="text-left text-gray-600">Cantidad:</label>
       <input
         defaultValue={product.cuantity}
         type="number"
-        onChange={(e) => changeProductCuantity(product, e.target.value)}
+        onChange={(e) => setNewQuantity(e.target.value)}
         className="border-secondary-400 border-2 focus:outline-secondary-600"
       />
+      <div className="p-4">
+      <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-2 rounded"  title="close"
+          onClick={handleCloseModal}>
+        OK
+      </button>
+      </div>
     </div>
   );
 }
+
 
 export default GeneratedList;

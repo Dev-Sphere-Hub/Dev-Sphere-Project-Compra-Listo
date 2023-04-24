@@ -1,7 +1,18 @@
 import smallLogo from "@/assets/images/smallLogo.webp";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { IoIosList, IoIosPaper, BsFillQuestionCircleFill, TiInfoLargeOutline, FaRegEnvelope, FaRegEnvelopeOpen, MdCategory, IoMdLogOut } from "react-icons/all";
+import {
+  IoIosList,
+  IoIosPaper,
+  BsFillQuestionCircleFill,
+  TiInfoLargeOutline,
+  FaRegEnvelope,
+  FaRegEnvelopeOpen,
+  MdCategory,
+  IoMdLogOut,
+} from "react-icons/all";
+import { IoMdExit, BiUserCircle } from "react-icons/all";
+import { decodeToken } from "@/api/auth";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -60,6 +71,14 @@ function NavBar() {
                       </span>
                     </li>
                   </Link>
+                  <Link>
+                    <li className="flex items-center mr-3 p-3 border-b-2 border-transparent hover:border-violet-700 group text-slate-900 text-body font-body transition-all duration-300">
+                      <BiUserCircle className="mr-4 text-lg text-violet-700 group-hover:text-green-500 transition" />
+                      <span className="border-b-2 border-transparent hover:border-gradient-violet-green">
+                        {decodeToken()?.sub}
+                      </span>
+                    </li>
+                  </Link>
                   <Link to="/">
     <button className="flex items-center ml-4 ">
       <IoMdLogOut className="mr-3.5 text-gray-500 hover:text-violet-700" />
@@ -97,6 +116,14 @@ function NavBar() {
                   <FaRegEnvelope className="mr-3.5 text-violet-700" /> Contacto
                 </li>
               </Link>
+              <Link>
+                    <li className="flex items-center mr-3 p-3 border-b-2 border-transparent hover:border-violet-700 group text-slate-900 text-body font-body transition-all duration-300">
+                      <BiUserCircle className="mr-4 text-lg text-violet-700 group-hover:text-green-500 transition" />
+                      <span className="border-b-2 border-transparent hover:border-gradient-violet-green">
+                        {decodeToken()?.sub}
+                      </span>
+                    </li>
+                  </Link>
                    
   <Link to="/">
     <button className="flex items-center ml-4 text-gray-500 hover:text-gray-900">
