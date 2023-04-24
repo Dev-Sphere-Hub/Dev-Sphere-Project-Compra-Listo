@@ -63,7 +63,7 @@ function NavBar() {
                       </span>
                     </li>
                   </Link>
-                  <Link to="/">
+                  <Link to="#">
                     <li className="flex items-center mr-3 p-3 border-b-2 border-transparent hover:border-violet-700 text-slate-900 text-body font-body transition-all duration-300">
                       <TiInfoLargeOutline className="mr-4 text-lg text-violet-700 hover:text-green-500" />
                       <span className="border-b-2 border-transparent hover:border-gradient-violet-green">
@@ -71,7 +71,7 @@ function NavBar() {
                       </span>
                     </li>
                   </Link>
-                  <Link to="/">
+                  <Link to="#">
                     <li className="flex items-center mr-3 p-3 border-b-2 border-transparent hover:border-violet-700 text-slate-900 text-body font-body transition-all duration-300">
                       <FaRegEnvelope className="mr-4 text-lg text-violet-700 hover:text-green-500" />
                       <span className="border-b-2 border-transparent hover:border-gradient-violet-green">
@@ -112,13 +112,13 @@ function NavBar() {
                   </span>
                 </li>
               </Link>
-              <Link to="/">
+              <Link to="#">
                 <li className="flex items-center mr-3 p-3 rounded-full text-slate-900 hover:bg-slate-200 text-body font-body">
                   <TiInfoLargeOutline className="mr-3.5 text-violet-700" />{" "}
                   Sobre Nosotros
                 </li>
               </Link>
-              <Link to="/">
+              <Link to="#">
                 <li className="flex items-center mr-3 p-3 rounded-full text-slate-900 hover:bg-slate-200 text-body font-body">
                   <FaRegEnvelope className="mr-3.5 text-violet-700" /> Contacto
                 </li>
