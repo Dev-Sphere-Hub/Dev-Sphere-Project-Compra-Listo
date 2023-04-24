@@ -7,7 +7,7 @@ import { useRef } from "react";
 import { MdPlaylistAddCheck, MdShoppingCart } from "react-icons/md";
 import OrangeButton from "@/components/OrangeButton";
 import { Link } from "react-router-dom";
-function ExpressTab() {
+function ExpressBuyTab() {
   const [dailyProducts, setDailyProducts] = useState(() => {
     const savedProducts = localStorage.getItem("dailyProducts");
     if (savedProducts) {
@@ -189,7 +189,7 @@ function ExpressTab() {
                 <input
                   autoFocus="autofocus"
                   type="text"
-                  className="ml-2 lg:text-2xl animate-blink bg-transparent rounded-md focus:outline-none focus:ring focus:ring-transparent"
+                  className="w-[14rem] lg:w-full ml-2 lg:text-2xl animate-blink bg-transparent rounded-md focus:outline-none focus:ring focus:ring-transparent"
                   value={product.name}
                   onChange={(e) =>
                     handleEditProduct(
@@ -351,4 +351,4 @@ function ExpressTab() {
   );
 }
 
-export default ExpressTab;
+export default ExpressBuyTab;
