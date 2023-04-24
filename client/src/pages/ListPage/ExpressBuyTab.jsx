@@ -279,7 +279,7 @@ function ExpressTab() {
               </div>
               <div>{product.name}</div>
             </div>
-            <div className="w-full flex justify-end items-center gap-2 bg-[#ecf6fd]">
+            <div className="w-full flex justify-center lg:justify-end items-center gap-2 bg-[#ecf6fd]">
               <div className="flex justify-end items-center">
                 {product.editing ? (
                   <input

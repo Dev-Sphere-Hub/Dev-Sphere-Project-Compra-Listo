@@ -208,11 +208,11 @@ function GeneratedList() {
         <footer className="bg-secondary-500/30 backdrop-blur-md fixed bottom-0 left-0 w-full py-3">
           <div className="container flex justify-between items-center">
             <span>
-              Cantidad de productos:{" "}
+              Productos tachados de la lista:
               <b>{productsList.filter((product) => product.done).length}</b>
             </span>
             <span>
-              Total:{" "}
+              Llevas hasta ahora:
               <b>
                 $
                 {Math.round(
