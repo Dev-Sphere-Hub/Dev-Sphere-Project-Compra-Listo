@@ -40,7 +40,7 @@ const LandingPage = ({ setIsAuthenticated, isAuthenticated }) => {
               <p className="text-2xl tracking-2 font-damion">
                 La comunidad de compradores eficientes
               </p>
-              <div className="underline relative mx-3 min-[411px]:py-3 lg:hidden">
+              <div className="underline relative mx-3 py-3 hidden sm:block lg:hidden">
                 <div className="absolute left-0 bottom-0 w-full h-1 bg-gradient-to-r from-transparent via-orange-300 to-transparent"></div>
               </div>
             </div>
