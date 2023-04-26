@@ -37,19 +37,20 @@ const CATEGORIES_DATA = [
 ];
 
 const PRODUCTS = [
-  { id: 1, name: "Carne de res", price: 5.99, category: 1 },
-  { id: 2, name: "Carne de cerdo", price: 3.99, category: 1 },
-  { id: 3, name: "Pollo", price: 5.99, category: 1 },
-  { id: 4, name: "Lechuga", price: 7.99, category: 2 },
-  { id: 5.99, name: "Tomate", price: 5.99, category: 2 },
-  { id: 6, name: "Cebolla", price: 5.99, category: 2 },
-  { id: 7, name: "Leche", price: 8.99, category: 3 },
-  { id: 8, name: "Queso", price: 5.99, category: 3 },
-  { id: 9, name: "Yogur", price: 2.99, category: 3 },
-  { id: 10, name: "Pan blanco", price: 5.99, category: 4 },
-  { id: 11, name: "Pan integral", price: 9.99, category: 4 },
-  { id: 12, name: "Pan de ajo", price: 1.99, category: 4 },
+  { id: 1, name: "Carne de res", price: 2548.0, category: 1 },
+  { id: 2, name: "Carne de cerdo", price: 1516.2, category: 1 },
+  { id: 3, name: "Pollo", price: 2276.2, category: 1 },
+  { id: 4, name: "Lechuga", price: 303, category: 2 },
+  { id: 5, name: "Tomate", price: 76.2, category: 2 },
+  { id: 6, name: "Cebolla", price: 60, category: 2 },
+  { id: 7, name: "Leche", price: 416.2, category: 3 },
+  { id: 8, name: "Queso", price: 2276, category: 3 },
+  { id: 9, name: "Yogur", price: 538.1, category: 3 },
+  { id: 10, name: "Pan blanco", price: 76.2, category: 4 },
+  { id: 11, name: "Pan integral", price: 96.2, category: 4 },
+  { id: 12, name: "Pan de ajo", price: 75.2, category: 4 },
 ];
+
 
 const groupBy = (items, key) =>
   items.reduce(
