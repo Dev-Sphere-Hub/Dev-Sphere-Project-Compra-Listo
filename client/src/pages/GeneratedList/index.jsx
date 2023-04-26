@@ -205,7 +205,7 @@ function GeneratedList() {
             </p>
           </div>
         </div>
-        <footer className="h-[10rem] flex lg:flex-none bg-secondary-500/30 backdrop-blur-md fixed bottom-0 left-0 w-full py-3">
+        <footer className="h-[7rem] flex lg:flex-none bg-secondary-500/30 backdrop-blur-md fixed bottom-0 left-0 w-full py-3">
           <div className="container flex flex-col lg:flex-col lg:justify-between items-center">
             <span>
               Productos obtenidos:
