@@ -196,7 +196,7 @@ function GeneratedList() {
             )}
             <hr />
             <p className="text-right text-gray-600">
-              Total $
+              Total estimado $
               {Math.round(
                 productsList.reduce(function (acc, obj) {
                   return acc + obj.price * obj.cuantity;
@@ -205,10 +205,10 @@ function GeneratedList() {
             </p>
           </div>
         </div>
-        <footer className="bg-secondary-500/30 backdrop-blur-md fixed bottom-0 left-0 w-full py-3">
-          <div className="container flex justify-between items-center">
+        <footer className="h-[10rem] flex lg:flex-none bg-secondary-500/30 backdrop-blur-md fixed bottom-0 left-0 w-full py-3">
+          <div className="container flex flex-col lg:flex-col lg:justify-between items-center">
             <span>
-              Productos tachados:
+              Productos obtenidos:
               <b className="lg:ml-2">{productsList.filter((product) => product.done).length}</b>
             </span>
             <span className="flex justify-end items-end ">
