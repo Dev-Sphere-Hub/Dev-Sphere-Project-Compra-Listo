@@ -195,11 +195,11 @@ function GeneratedList() {
             <hr />
             <p className="text-right text-gray-600">
               Total de lista $
-              {Math.round(
+             <b> {Math.round(
                 productsList.reduce(function (acc, obj) {
                   return acc + obj.price * obj.cuantity;
                 }, 0) * 100
-              ) / 100}
+              ) / 100}</b>
             </p>
           </div>
         </div>
