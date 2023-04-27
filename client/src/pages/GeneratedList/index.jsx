@@ -1,10 +1,8 @@
 import { useState, Fragment } from "react";
 import { BlobProvider, PDFViewer } from "@react-pdf/renderer";
 import { Dialog, Transition } from "@headlessui/react";
-
 import { MdEdit, MdPictureAsPdf, MdCancel } from "react-icons/md";
 import { ImWhatsapp } from "react-icons/im";
-
 import ListDocument from "@/components/ListDocument";
 import ProductListItem from "@/components/ProductListItem";
 
@@ -29,7 +27,7 @@ const CATEGORIES_DATA = [
 
 const PRODUCTS = [
   {
-    id: 5.99,
+    id: 15.99,
     name: "Tomate",
     price: 5.99,
     category: 2,
@@ -39,7 +37,7 @@ const PRODUCTS = [
   {
     id: 4,
     name: "Lechuga",
-    price: 7.99,
+    price: 70.99,
     category: 2,
     cuantity: 1,
     done: false,
@@ -47,7 +45,7 @@ const PRODUCTS = [
   {
     id: 6,
     name: "Cebolla",
-    price: 5.99,
+    price: 20.99,
     category: 2,
     cuantity: 1,
     done: false,
@@ -55,7 +53,7 @@ const PRODUCTS = [
   {
     id: 8,
     name: "Queso",
-    price: 5.99,
+    price: 500.99,
     category: 3,
     cuantity: 1,
     done: false,
@@ -63,7 +61,7 @@ const PRODUCTS = [
   {
     id: 7,
     name: "Leche",
-    price: 8.99,
+    price: 180.99,
     category: 3,
     cuantity: 1,
     done: false,
@@ -130,7 +128,7 @@ function GeneratedList() {
 
   return (
     <main className="z-0 lg:bg-contain bg-[url('../../assets/images/mainBg.webp')] min-h-screen">
-      <div className="lg:px-11 bg-white bg-opacity-80  h-full min-h-screen relative pb-24">
+      <div className="lg:px-11 bg-white bg-opacity-80 h-full min-h-screen relative pb-24">
         <div className=" max-w-2xl mx-auto bg-white shadow-2xl p-[4%] w-11/12 my-10 mb-30">
           {/* <PDFViewer className="w-full h-screen">
         <ListDocument listName="Lista de Marzo" products={PRODUCTS} />
@@ -196,7 +194,7 @@ function GeneratedList() {
             )}
             <hr />
             <p className="text-right text-gray-600">
-              Total estimado $
+              Total de lista $
               {Math.round(
                 productsList.reduce(function (acc, obj) {
                   return acc + obj.price * obj.cuantity;
@@ -234,7 +232,6 @@ function ProductItem({
   toggleProductDone,
   changeProductPrice,
   changeProductCuantity,
-  saveChanges, // Add saveChanges prop
 }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -264,7 +261,7 @@ function ProductItem({
             <div className="fixed inset-0 bg-black bg-opacity-25" />
           </Transition.Child>
 
-          <div className="fixed inset-0 overflow-y-auto scrollbar">
+          <div className="fixed inset-0 overflow-y-auto">
             <div className="flex min-h-full items-center justify-center p-4 text-center">
               <Transition.Child
                 as={Fragment}
@@ -284,7 +281,6 @@ function ProductItem({
                     product={product}
                     changeProductPrice={changeProductPrice}
                     changeProductCuantity={changeProductCuantity}
-                    saveChanges={saveChanges} // Pass saveChanges prop
                   />
                 </Dialog.Panel>
               </Transition.Child>
@@ -321,25 +317,12 @@ function ProductItem({
   );
 }
 
-
-
-
 function EditProductModal({
   handleCloseModal,
   product,
   changeProductPrice,
   changeProductCuantity,
-  saveChanges,
 }) {
-  const [newPrice, setNewPrice] = useState(product?.price);
-  const [newQuantity, setNewQuantity] = useState(product?.cuantity);
-
-  const handleSaveChanges = () => {
-    const updatedProduct = { ...product, price: newPrice, cuantity: newQuantity };
-    saveChanges(updatedProduct);
-    handleCloseModal(); // cerrar el modal después de guardar los cambios
-  };
-
   return (
     <div className="flex flex-col gap-1">
       <div className="flex justify-between">
@@ -358,17 +341,17 @@ function EditProductModal({
         autofocus="autofocus"
         defaultValue={product.price}
         type="number"
-        onChange={(e) => setNewPrice(e.target.value)}
+        onChange={(e) => changeProductPrice(product, e.target.value)}
         className="border-secondary-400 border-2 focus:outline-secondary-600"
       />
       <label className="text-left text-gray-600">Cantidad:</label>
       <input
         defaultValue={product.cuantity}
         type="number"
-        onChange={(e) => setNewQuantity(e.target.value)}
+        onChange={(e) => changeProductCuantity(product, e.target.value)}
         className="border-secondary-400 border-2 focus:outline-secondary-600"
       />
-      <div className="p-4">
+        <div className="p-4">
       <button className="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-2 rounded"  title="close"
           onClick={handleCloseModal}>
         OK
@@ -377,6 +360,5 @@ function EditProductModal({
     </div>
   );
 }
-
 
 export default GeneratedList;
