@@ -11,7 +11,9 @@ const Login = ({ setIsAuthenticated, isAuthenticated }) => {
   const navigate = useNavigate();
   const [errorMessage, setErrorMessage] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-
+const getLOgin = () =>{
+navigate("/create")
+}
   const {
     register,
     handleSubmit,
@@ -19,14 +21,14 @@ const Login = ({ setIsAuthenticated, isAuthenticated }) => {
   } = useForm();
 
   const onSubmit = async (data) => {
-    setErrorMessage("");
-    try {
-      await signInUser(data);
-      navigate("/create");
-    } catch (error) {
-      console.error(error);
-      setErrorMessage("Hubo un error al iniciar sesión");
-    }
+    // setErrorMessage("");
+    // try {
+    //   await signInUser(data);
+    //   navigate("/create");
+    // } catch (error) {
+    //   console.error(error);
+    //   setErrorMessage("Hubo un error al iniciar sesión");
+    // }
   };
 
   return (
@@ -80,7 +82,7 @@ const Login = ({ setIsAuthenticated, isAuthenticated }) => {
             </div>
 
             <div className="px-6">
-              <OrangeButton text="Iniciar Sesion" type="submit" />
+              <OrangeButton text="Iniciar Sesion" type="submit" onClick={getLOgin}/>
             </div>
           </form>
         </div>
