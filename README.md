@@ -87,16 +87,6 @@ VITE_APP_API_ROUTE = Localhost of you api ( ex. http://localhost:3000).
 ![Maven](https://img.shields.io/badge/Maven%20-9e0e7d.svg?&style=for-the-badge&logo=maven&logoColor=000)
 ![Railway](https://img.shields.io/badge/Railway%20-000.svg?&style=for-the-badge&logo=railway&logoColor=fff)
 
-### 👉🏻 Developers
-
-| <img src="https://i.postimg.cc/854hhR6Q/Alan.jpg" alt="Photo Alan Cejas" height=90>| <img src="https://i.postimg.cc/d1RFs9xC/Marcos.png" alt="Photo Marcos Paz Goncheff" height=90>| <img src="https://i.postimg.cc/90cMMwqD/Yo-panal.jpg" alt="Photo Matías Carballo" height=90>| <img src="https://i.postimg.cc/9fQd3XzG/Pablo.jpg" alt="Photo Pablo Mejillon" height=90>|
-|:-:|:-:|:-:|:-:|
-| **Alan Cejas**  | **Marcos Paz Goncheff**  | **Matías Carballo** | **Pablo Mejillon** |
-| <a href="https://github.com/Alandcejas01" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>  <a href="https://www.linkedin.com/in/alandcejas01/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/marcosep192000" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/marcos-paz-goncheff/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/lokywolf2295" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>  <a href="https://www.linkedin.com/in/matias-es-carballo/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/pablex72" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>  <a href="https://linkedin.com/in/pablo-mejillone-98b07425a/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> ||
-
-<hr/>
-
-## ✔ Frontend
 
 ### 👉🏻 Task List ✅
 
@@ -123,18 +113,3 @@ VITE_APP_API_ROUTE = Localhost of you api ( ex. http://localhost:3000).
 ![ESLint](https://img.shields.io/badge/ESLint-000?style=for-the-badge&logo=ESLint&logoColor=fff)
 ![Vercel](https://img.shields.io/badge/vercel%20-%23000000.svg?&style=for-the-badge&logo=vercel&logoColor=white)
 
-### 👉🏻 Developers
-
-| <img src="https://i.postimg.cc/wBwqL2Vd/Lucero.png" alt="Photo Lucero Gonzalez" width=80>| <img src="https://i.postimg.cc/fR5rDXrg/Ana.png" alt="Photo Ana Juárez" height=90>| <img src="https://i.postimg.cc/bY1fSqN0/Antonio.jpg" alt="Photo Antonio Ayola" height=90>| <img src="https://i.postimg.cc/dV5tgCH6/Carlos.jpg" alt="Photo Carlos Bohorquez Parra" height=90>|
-:-:|:-:|:-:|:-:|
-| **Lucero Gonzalez**  | **Ana Juárez**  | **Antonio Ayola**  | **Carlos Bohorquez Parra**  |
-| <a href="https://github.com/lucerocamila" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/gonzalezlucerocamila/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/Layeska" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/ana-juarez01/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/Tono2007" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/antonio-ayola/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> | <a href="https://github.com/carlosBohorquuez20" target="_blank"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/carlos-bohorquez-parra-711b5224b/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> ||
-
-
-
-## ✔ Team Leader
-
-| <img src="https://i.postimg.cc/nVBHJvy1/Miguel.jpg" alt="Photo Miguel Bazzarelli" width=80>|
-|:-:|
-| Miguel Bazzarelli |
-|<a href="github.com/migbazz"><img src="https://img.shields.io/badge/github-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a> <a href="https://www.linkedin.com/in/miguel-ernesto-bazzarelli-8b5029247/" target="_blank"><img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white"/></a> ||
