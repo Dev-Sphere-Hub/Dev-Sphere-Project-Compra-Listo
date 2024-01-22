@@ -1,4 +1,4 @@
-# s7-11-t-javareact
+java-react project
 <div align="center">
 
 ![Compra Listo Logo](https://i.postimg.cc/0283mvbh/Logo-Compra-Listo.png)
